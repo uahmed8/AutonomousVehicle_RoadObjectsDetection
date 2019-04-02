@@ -1,0 +1,26 @@
+env:
+  browser: true
+  es6: true
+  jquery: true
+  jest: true
+extends:
+  ["eslint:recommended",
+   "google",
+   "plugin:flowtype/recommended"]
+rules:
+  linebreak-style:
+    - error
+    - unix
+  semi:
+    - error
+    - always
+  no-unused-vars: 
+    - error
+    - argsIgnorePattern: "[iI]gnored"
+  no-invalid-this:
+    - 0
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: "module"
+parser: "babel-eslint"
+plugins: ["flowtype"]
